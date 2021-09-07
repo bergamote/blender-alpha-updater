@@ -1,12 +1,7 @@
 # blender-alpha-updater
 
-A simple python script for Linux that uses wget and tar.
+A python script for Linux that uses wget and tar to download and extract the current Blender Alpha daily build.
 
-## Why?
-
-Every few days or week, I would go to the blender.org experimental build page, download the latest alpha daily archive, extract it then rename the folder to "blender-latest", so that I didn't need to change my custom shortcut to the Blender binary file.
-
-After a few years of doing that, it hit me that this kind of repetitive tasks is exactly why we have computers in the first place. So I wrote this script which does all those steps automatically. The only difference is that instead of renaming the folder, it creates/overwrites a symbolic link to it. 
 
 ## How?
 
@@ -22,3 +17,9 @@ This is NOT for Blender users who are working on big collaborative productions, 
 
 The script will only download the latest build when it has a different name from the ones in the current folder, so you don't end up downloading and extracting a version you already have installed. **Note** that whilst the symbolic folder gets updated, the previous build doesn't get deleted automatically. This is just in case of a show-stopping regression, and it does mean you might want to go and delete a few of the older builds every now and then.
 
+
+## Why?
+
+Every few days or week, I would go to the blender.org experimental build page, download the latest alpha daily archive, extract it then rename the folder to "blender-latest", so that I didn't need to change my custom shortcut to the Blender binary file.
+
+After a few years of doing that, it hit me that this kind of repetitive tasks is exactly why we have computers in the first place. So I wrote this script which does all those steps automatically. The only difference is that instead of renaming the folder, it creates/overwrites a symbolic link to it. 
